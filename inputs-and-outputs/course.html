@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tabs</title>
+    </head>
+    <body>
+        <form action="course.php" method="post">
+            name of course:<input type="text" name="long_name">
+            <br>
+            short name of course:<input type="text" name="short_name">
+            <br>
+            credit:<input type="number" name="credit">
+            <br>
+            does it come with lab or is lab?:<select name="is_lab">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+            <br>
+            is lab graduit course?:<select name="is_grad">
+                <option value="1">yes</option>
+                <option value="0">no</option>
+            </select>
+            <br>
+            which department:<select name="DEID">
+                <option value="1">Computer Science</option>
+                <option value="2">Mathematic</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

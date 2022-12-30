@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tabs</title>
+    </head>
+    <body> 
+        <form action="inputs.php" method="post">
+            what semeter:<input type="text" name="SEID">
+            <br>
+            name of class:<input type="text" name="CID">
+            <br>
+            how many does per week:<input type="text" name="lecture_per_week">
+            <br>
+            where is the room going to be:<input type="text" name="lecture_ROID">
+            <br>
+            staff first name:<input type="text" name="lecture_FID">
+            <br>
+            time period:<input id="timePeriod" type="number" name="lecture_duration">mins
+            <br>
+            <input onclick="locked()" type="checkbox" name="isLocked" value="yes">
+            <label> is there a set time</label>
+            <input onclick="locked()" type="checkbox" name="isLab" value="yes">
+            <label> is there a lab</label>
+            <style>
+                div.ex1 {display: none;}
+            </style>
+            <div id="lockedClass" class="ex1">
+                
+                Start time:<input type="number" name="lecture_start_time">
+                <br>
+                End time:<input type="number" name="lecture_end_time">
+                <br>
+              </div>
+              <div id="lockedlab" class="ex1">
+                
+                Start time:<input type="number" name="lab_start_time">
+                <br>
+                End time:<input type="number" name="lab_end_time">
+                <br>
+                how many does per week:<input type="text" name="lab_days">
+            <br>
+            where is the room going to be:<input type="text" name="lab_ROID">
+            <br>
+            staff first name:<input type="text" name="llab_FID">
+            <br>
+              </div>
+            <br>
+            <script>
+                function locked() {
+                    var x = document.getElementById("lockedClass");
+                    var y = document.getElementById("lockedlab");
+                    var p = document.getElementById("timePeriod");
+                    if (x.style.display == "block"||y.style.display == "block") {
+                      x.style.display = "none";
+                      y.style.display = "none";
+                      p.style.display = "block";
+                    } else {
+                      x.style.display = "block";
+                      y.style.display = "block  ";
+                      p.style.display = "none";
+                    }
+                    if (y.style.display == "block") {
+                      y.style.display = "none";
+                      //p.style.display = "block";
+                    } else {
+                      y.style.display = "block";
+                      //p.style.display = "none";
+                    }
+                  }</script>
+            <input type="submit">
+        </form>
+    </body>
+</html>
