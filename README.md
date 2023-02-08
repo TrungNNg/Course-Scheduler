@@ -1,6 +1,3 @@
-# Fall-2022-Course-Scheduler-Project
-Software Engineering Class Project 
-Group 5 - SUNY New Paltz Course-Scheduler
 Emmanuel Johnson, Kyle Wendholt, Matthew Hughes, Jordan Farrester, Trung Nguyen, Corey Carter
 
 Final Video(located in Documents/Final video):
